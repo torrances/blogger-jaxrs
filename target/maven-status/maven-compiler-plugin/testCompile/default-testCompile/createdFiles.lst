@@ -1,0 +1,5 @@
+com\trimc\blogger\jaxrs\BooksDaoTest.class
+com\trimc\blogger\jaxrs\MongoClientTest.class
+com\trimc\blogger\jaxrs\WebResourceTester.class
+com\trimc\blogger\jaxrs\SpringMongoConfigTest.class
+com\trimc\blogger\jaxrs\ControllerTest.class

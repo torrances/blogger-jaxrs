@@ -1,0 +1,38 @@
+<html>
+<head>
+<script src="js/jquery-2.1.3.js"></script>
+<script>
+
+	var BASE = "http://192.168.1.7:8080/blogger/demo/endpoint/";
+
+	$(document).ready(function() {
+		$("#btnSubmitGET").click(function() {
+			get($("#txtGET").val());
+		});
+	});
+
+	/* get data by id */
+	function get(id) {
+		var url = BASE + id;
+		$.getJSON(url, function(data) {
+			/* create a list from the results */
+			var items = [];
+			$.each(data, function(key, val) {
+				items.push("<li id='" + key + "'>" + val + "</li>");
+			});
+
+			$("<ul/>", {
+				"class" : "my-new-list",
+				html : items.join("")
+			}).appendTo("body");
+		});
+	}
+
+</script>
+</head>
+
+<body>
+	<input type="text" name="id" value="9956" id="txtGET" class="id" />
+	<input id="btnSubmitGET" type="submit" value="GET" />
+</body>
+</html>
