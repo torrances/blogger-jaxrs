@@ -1,4 +1,4 @@
-package com.trimc.blogger.jaxrs.util;
+package com.trimc.blogger.jaxrs.mongo.util;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.ComponentScan;

@@ -1,4 +1,4 @@
-package com.trimc.blogger.jaxrs;
+package com.trimc.blogger.jaxrs.mongo;
 
 import static org.junit.Assert.assertNotNull;
 

@@ -1,4 +1,4 @@
-package com.trimc.blogger.jaxrs;
+package com.trimc.blogger.jaxrs.mongo;
 
 import static org.junit.Assert.assertNotNull;
 
@@ -8,10 +8,10 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 import com.trimc.blogger.commons.exception.AdapterValidationException;
 import com.trimc.blogger.commons.exception.BusinessException;
-import com.trimc.blogger.jaxrs.dao.BooksDao;
-import com.trimc.blogger.jaxrs.dto.Book;
-import com.trimc.blogger.jaxrs.dto.BookAdapter;
-import com.trimc.blogger.jaxrs.util.SpringMongoConfig;
+import com.trimc.blogger.jaxrs.mongo.dao.BooksDao;
+import com.trimc.blogger.jaxrs.mongo.dto.Book;
+import com.trimc.blogger.jaxrs.mongo.dto.BookAdapter;
+import com.trimc.blogger.jaxrs.mongo.util.SpringMongoConfig;
 
 public final class BooksDaoTest {
 

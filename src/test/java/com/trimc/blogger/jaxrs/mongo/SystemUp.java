@@ -1,4 +1,4 @@
-package com.trimc.blogger.jaxrs;
+package com.trimc.blogger.jaxrs.mongo;
 
 import static org.junit.Assert.assertNotNull;
 
@@ -7,8 +7,8 @@ import java.net.Socket;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import com.trimc.blogger.jaxrs.util.AppConfig;
-import com.trimc.blogger.jaxrs.util.SpringMongoConfig;
+import com.trimc.blogger.jaxrs.mongo.util.AppConfig;
+import com.trimc.blogger.jaxrs.mongo.util.SpringMongoConfig;
 
 public final class SystemUp {
 

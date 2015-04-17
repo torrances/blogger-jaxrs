@@ -1,4 +1,4 @@
-package com.trimc.blogger.jaxrs.dao;
+package com.trimc.blogger.jaxrs.mongo.dao;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 
 import com.trimc.blogger.commons.LogManager;
 import com.trimc.blogger.commons.exception.BusinessException;
-import com.trimc.blogger.jaxrs.dto.Book;
+import com.trimc.blogger.jaxrs.mongo.dto.Book;
 
 @Component
 @ComponentScan

@@ -1,4 +1,4 @@
-package com.trimc.blogger.jaxrs.util;
+package com.trimc.blogger.jaxrs.mongo.util;
 
 import java.io.IOException;
 

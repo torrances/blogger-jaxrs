@@ -1,4 +1,4 @@
-package com.trimc.blogger.jaxrs.dto;
+package com.trimc.blogger.jaxrs.mongo.dto;
 
 import javax.ws.rs.core.Response;
 

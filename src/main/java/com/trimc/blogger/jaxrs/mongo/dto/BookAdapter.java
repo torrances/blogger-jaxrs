@@ -1,6 +1,6 @@
-package com.trimc.blogger.jaxrs.dto;
+package com.trimc.blogger.jaxrs.mongo.dto;
 
-import com.trimc.blogger.jaxrs.util.UidGenerator;
+import com.trimc.blogger.jaxrs.mongo.util.UidGenerator;
 
 public final class BookAdapter {
 

@@ -1,4 +1,4 @@
-package com.trimc.blogger.jaxrs;
+package com.trimc.blogger.jaxrs.mongo;
 
 import static org.junit.Assert.assertNotNull;
 
@@ -8,9 +8,9 @@ import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import com.trimc.blogger.commons.LogManager;
-import com.trimc.blogger.jaxrs.dmo.Controller;
-import com.trimc.blogger.jaxrs.dto.BookAdapter;
-import com.trimc.blogger.jaxrs.util.SpringMongoConfig;
+import com.trimc.blogger.jaxrs.mongo.dmo.Controller;
+import com.trimc.blogger.jaxrs.mongo.dto.BookAdapter;
+import com.trimc.blogger.jaxrs.mongo.util.SpringMongoConfig;
 
 public final class ControllerTest {
 

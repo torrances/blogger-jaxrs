@@ -1,4 +1,4 @@
-package com.trimc.blogger.jaxrs;
+package com.trimc.blogger.jaxrs.mongo;
 
 import static org.junit.Assert.assertEquals;
 
@@ -8,8 +8,8 @@ import com.sun.jersey.api.client.Client;
 import com.sun.jersey.api.client.ClientResponse;
 import com.sun.jersey.api.client.WebResource;
 import com.trimc.blogger.commons.LogManager;
-import com.trimc.blogger.jaxrs.dto.Book;
-import com.trimc.blogger.jaxrs.dto.BookAdapter;
+import com.trimc.blogger.jaxrs.mongo.dto.Book;
+import com.trimc.blogger.jaxrs.mongo.dto.BookAdapter;
 
 public class WebResourceTester {
 

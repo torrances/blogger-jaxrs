@@ -1,4 +1,4 @@
-package com.trimc.blogger.jaxrs.dmo;
+package com.trimc.blogger.jaxrs.mongo.dmo;
 
 import javax.ws.rs.Consumes;
 import javax.ws.rs.FormParam;
@@ -18,10 +18,10 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import com.google.gson.JsonSyntaxException;
 import com.trimc.blogger.commons.LogManager;
 import com.trimc.blogger.commons.utils.GsonUtils;
-import com.trimc.blogger.jaxrs.dto.Book;
-import com.trimc.blogger.jaxrs.dto.BookAdapter;
-import com.trimc.blogger.jaxrs.dto.ResponseAdapter;
-import com.trimc.blogger.jaxrs.util.SpringMongoConfig;
+import com.trimc.blogger.jaxrs.mongo.dto.Book;
+import com.trimc.blogger.jaxrs.mongo.dto.BookAdapter;
+import com.trimc.blogger.jaxrs.mongo.dto.ResponseAdapter;
+import com.trimc.blogger.jaxrs.mongo.util.SpringMongoConfig;
 
 @Path("/endpoint")
 public class RestEndpoint {
