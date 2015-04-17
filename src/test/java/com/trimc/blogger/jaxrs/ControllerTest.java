@@ -28,6 +28,8 @@ public final class ControllerTest {
 
 	@Test
 	public void post() throws Throwable {
+		SystemTest.up();
+		
 		getController().post(BookAdapter.transform("wine dark sea", "patrick o'brian"));
 	}
 }

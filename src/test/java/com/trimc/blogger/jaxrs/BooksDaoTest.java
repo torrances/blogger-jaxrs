@@ -26,6 +26,8 @@ public final class BooksDaoTest {
 
 	@Test
 	public void remove() throws Throwable {
+		SystemTest.up();
+		
 		@SuppressWarnings("resource") ApplicationContext ctx = new AnnotationConfigApplicationContext(SpringMongoConfig.class);
 		BooksDao booksDao = (BooksDao) ctx.getBean("booksDao");
 		booksDao.remove(testBook2()); /* this will succeed whether the object exists or not */
@@ -33,6 +35,8 @@ public final class BooksDaoTest {
 
 	@Test(expected = BusinessException.class)
 	public void save() throws Throwable {
+		SystemTest.up();
+		
 		@SuppressWarnings("resource") ApplicationContext ctx = new AnnotationConfigApplicationContext(SpringMongoConfig.class);
 		BooksDao booksDao = (BooksDao) ctx.getBean("booksDao");
 		booksDao.remove(testBook1());
@@ -42,6 +46,8 @@ public final class BooksDaoTest {
 
 	@Test
 	public void save1() throws Throwable {
+		SystemTest.up();
+		
 		@SuppressWarnings("resource") ApplicationContext ctx = new AnnotationConfigApplicationContext(SpringMongoConfig.class);
 		BooksDao booksDao = (BooksDao) ctx.getBean("booksDao");
 		booksDao.remove(testBook1());
