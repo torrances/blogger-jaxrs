@@ -28,7 +28,7 @@ public final class ControllerTest {
 
 	@Test
 	public void post() throws Throwable {
-		SystemTest.up();
+		org.junit.Assume.assumeTrue(SystemUp.check());
 		
 		getController().post(BookAdapter.transform("wine dark sea", "patrick o'brian"));
 	}

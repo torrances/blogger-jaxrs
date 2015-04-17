@@ -16,6 +16,7 @@ public final class SpringMongoConfigTest {
 
 	@Test
 	public void run() throws Throwable {
+		org.junit.Assume.assumeTrue(SystemUp.check());
 
 		ApplicationContext ctx = new AnnotationConfigApplicationContext(SpringMongoConfig.class);
 		assertNotNull(ctx);
