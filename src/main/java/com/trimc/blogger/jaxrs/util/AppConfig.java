@@ -10,14 +10,18 @@ import org.springframework.context.annotation.PropertySource;
 @PropertySource("classpath:config/mongo.properties")
 public class AppConfig {
 
+	@Value("${mongo.db}")
+	private String	database;
+
 	@Value("${mongo.host}")
 	private String	host;
 
 	@Value("${mongo.port}")
 	private Integer	port;
 
-	@Value("${mongo.db}")
-	private String	database;
+	public String getDatabase() {
+		return database;
+	}
 
 	public String getHost() {
 		return host;
@@ -27,19 +31,15 @@ public class AppConfig {
 		return port;
 	}
 
+	public void setDatabase(String database) {
+		this.database = database;
+	}
+
 	public void setHost(String host) {
 		this.host = host;
 	}
 
 	public void setPort(Integer port) {
 		this.port = port;
-	}
-
-	public String getDatabase() {
-		return database;
-	}
-
-	public void setDatabase(String database) {
-		this.database = database;
 	}
 }
