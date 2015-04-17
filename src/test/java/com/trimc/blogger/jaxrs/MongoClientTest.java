@@ -13,8 +13,9 @@ public final class MongoClientTest {
 
 	@Test
 	public void run() throws Throwable {
+		org.junit.Assume.assumeTrue(SystemUp.check());
 
-		MongoClient mongoClient = new MongoClient("192.168.1.26", 27017);
+		MongoClient mongoClient = new MongoClient(SystemUp.getConfig().getHost(), SystemUp.getConfig().getPort());
 		assertNotNull(mongoClient);
 
 		DB db = mongoClient.getDB("testdb");

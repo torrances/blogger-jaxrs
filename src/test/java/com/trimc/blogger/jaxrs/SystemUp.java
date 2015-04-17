@@ -13,13 +13,18 @@ import com.trimc.blogger.jaxrs.util.SpringMongoConfig;
 public final class SystemUp {
 
 	public static boolean check() throws Throwable {
+
+		return serverListening(getConfig().getHost(), getConfig().getPort());
+	}
+
+	public static AppConfig getConfig() throws Throwable {
 		ApplicationContext ctx = new AnnotationConfigApplicationContext(SpringMongoConfig.class);
 		assertNotNull(ctx);
 
 		AppConfig appConfig = (AppConfig) ctx.getBean("appConfig");
 		assertNotNull(appConfig);
 
-		return serverListening(appConfig.getHost(), appConfig.getPort());
+		return appConfig;
 	}
 
 	/* dc:url <http://www.geekality.net/2013/04/30/java-simple-check-to-see-if-a-server-is-listening-on-a-port/> */
